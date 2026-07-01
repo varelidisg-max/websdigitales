@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-black: #111111;
+  --brand-green: #16c784;
+  --brand-gray: #333333;
+  --brand-bg: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .dot-pattern {
+    background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
